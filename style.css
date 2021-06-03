@@ -888,14 +888,17 @@ h4 {
         padding-right: constant(safe-area-inset-right);
     }
 
+
     .slogan {
         display: flex;
-        width: 40rem;
+        flex-wrap: nowrap;
+        text-align: center;
+        justify-self:center;
+        padding-left: auto;
+        padding-right: auto;
     }
-
     .slogan > h2 {
-         white-space: pre;
-         text-align: center;
+
     }
 }
 
