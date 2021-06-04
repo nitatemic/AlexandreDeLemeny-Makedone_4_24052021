@@ -362,14 +362,32 @@ a:hover {
     z-index: 2;
 }
 
+
+    .slogan {
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: center;
+        justify-self:center;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    blockquote  {
+        border: none;
+    }
+
+    blockquote > p  {
+        font-size: 2rem;
+    }
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
         top: 50%;
         right: 20px;
-        transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
+        transform: translate(0, -50%);
     }
+
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
@@ -550,8 +568,9 @@ a[data-lightbox]:hover::before {
     z-index: 1;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+
 }
 
 a[data-lightbox]:hover img {
@@ -640,7 +659,7 @@ a[data-lightbox]:hover img {
 }
 
 h1,
-h2,
+h2, 
 h3,
 h4,
 h5,
@@ -676,9 +695,6 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 11px;
-}
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -887,19 +903,6 @@ h4 {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
-
-
-    .slogan {
-        display: flex;
-        flex-wrap: nowrap;
-        text-align: center;
-        justify-self:center;
-        padding-left: auto;
-        padding-right: auto;
-    }
-    .slogan > h2 {
-
-    }
 }
 
 @media (max-width: 767px) {
@@ -907,6 +910,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
+
     h1,
     h2,
     h3,
@@ -921,21 +925,25 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
+
     .navbar .nav {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
         float: none;
     }
+
     .navbar.row {
         margin-left: 0;
         margin-right: 0;
     }
+
     .site-navigation {
         position: inherit;
-        transform: none;
         -webkit-transform: none;
         -ms-transform: none;
+        transform: none;
     }
+
     .nav > li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
