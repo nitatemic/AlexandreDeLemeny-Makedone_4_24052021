@@ -738,6 +738,10 @@ a {
     margin: auto auto auto auto;
 }
 
+.social > span{
+    font-size: 2.5rem;
+}
+
 h2 {
     font-size: 3rem;
     line-height: 1.4em;
