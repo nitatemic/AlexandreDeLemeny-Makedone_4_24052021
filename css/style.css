@@ -362,22 +362,30 @@ a:hover {
 }
 
 
-    .slogan {
-        display: flex;
-        flex-wrap: nowrap;
-        text-align: center;
-        justify-self:center;
-        padding-left: auto;
-        padding-right: auto;
-    }
+.slogan {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-self:center;
+    padding-left: auto;
+    padding-right: auto;
+}
 
-    blockquote  {
-        border: none;
-    }
+blockquote  {
+    border: none;
+}
 
-    blockquote > p  {
-        font-size: 2rem;
-    }
+blockquote > p  {
+    font-size: 2rem;
+}
+
+.partner{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
