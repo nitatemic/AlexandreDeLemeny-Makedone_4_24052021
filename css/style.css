@@ -25,7 +25,9 @@ a:hover {
     z-index: 100000;
     background: #FFFFFF url("../img/pageload-spinner.gif") no-repeat center center;
 }
-
+.form-black{
+    color: black;
+}
 .bloc {
     width: 100%;
     clear: both;
@@ -92,6 +94,7 @@ a:hover {
 .texture-paper::before {
     background: url("../img/texture-paper.webp");
     background-size: 280px 280px;
+    filter: blur(8px);
 }
 
 .b-parallax {
@@ -99,7 +102,7 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: rgb(255, 255, 255);
 }
 
 .d-bloc button:hover {
@@ -132,7 +135,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgb(255, 255, 255);
 }
 
 .d-bloc .a-btn:hover,
