@@ -375,6 +375,11 @@ blockquote  {
     border: none;
 }
 
+blockquote > Footer{
+    font-weight: 500;
+    color: black;
+}
+
 blockquote > p  {
     font-size: 2rem;
 }
@@ -384,6 +389,9 @@ blockquote > p  {
     margin: 1rem 0 0 0;
     padding: 0;
     font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    
 }
 .partners > ul{
     margin: auto;
@@ -391,8 +399,12 @@ blockquote > p  {
     padding: 10px;
     list-style-type: none;
     text-align: center;
+    color: #FFFFFF;
 }
 
+.partners > ul > li > a{
+    color: #FFFFFF;
+}
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
@@ -810,7 +822,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #4c4c4c;
 }
 
 .tc-white {
