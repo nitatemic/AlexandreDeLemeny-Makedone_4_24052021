@@ -724,8 +724,9 @@ a {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 3rem;
     line-height: 1.4em;
+    
 }
 
 h3 {
@@ -794,7 +795,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C;
+    color: #F85001;
 }
 
 .btn-atomic-tangerine {
