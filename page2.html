@@ -21,6 +21,7 @@
     
 </head>
 <body>
+	
 <!-- Principal conteneur -->
 <div class="page-container">
     
@@ -105,8 +106,31 @@
 				</form>
 			</div>
 			<div class="col-sm-6">
+				<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js' crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+				<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
 				<p>
-					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi
+				<a href="contact@lachouetteagence.com">contact@lachouetteagence.com</a>
+				<br>
+				<a href="https://duckduckgo.com/?q=2+Place+Sathonay+69001+Lyon&t=h_&ia=web&iaxm=maps">2 Place Sathonay 69001 Lyon</a>
+				<div id='map' style='width: 400px; height: 300px;'></div>
+				<script>
+				mapboxgl.accessToken = 'pk.eyJ1IjoibGVtZW55YWxleCIsImEiOiJja3BybHZzY20wdXZtMnFzNGFpbWZtcW85In0.PqaZzstpzjoZHVHDVsRctw';
+				var map = new mapboxgl.Map({
+					container: 'map',
+					style: 'mapbox://styles/mapbox/streets-v11',
+					center: [4.830210474620333, 45.769538467990444], // starting position [lng, lat]
+					zoom: 16 // starting zoom
+				});
+				var marker = new mapboxgl.Marker({
+					color: "#C92114"
+				})
+				.setLngLat([4.830210474620333, 45.769538467990444])
+				.addTo(map);
+				</script>
+
+				<br>
+				Ouvert de 9h à 18h, du lundi au vendredi
 				</p>
 			</div>
 		</div>
@@ -174,5 +198,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha512-oBTprMeNEKCnqfuqKd6sbvFzmFQtlXS3e0C/RGFV0hD6QzhHV+ODfaQbAlmY6/q0ubbwlAM/nCJjkrgA3waLzg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="./js/blocs.js"></script>
 	<script src="./js/jquery.touchSwipe.js" defer></script>
+	
+
 </body>
 </html>
