@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
     <title>Contact | La chouette agence</title>
 
@@ -106,8 +107,8 @@
 				</form>
 			</div>
 			<div class="col-sm-6">
-				<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js' crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-				<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' crossorigin="anonymous" referrerpolicy="no-referrer"/>
+				
+				
 
 				<p>
 				Notre adresse mail : <a href="contact@lachouetteagence.com">contact@lachouetteagence.com</a>
@@ -115,20 +116,7 @@
 				Notre adresse : <a href="https://duckduckgo.com/?q=2+Place+Sathonay+69001+Lyon&t=h_&ia=web&iaxm=maps">2 Place Sathonay 69001 Lyon</a>
 				</p>
 				<div id='map' style='width: 400px; height: 300px;'></div>
-				<script>
-				mapboxgl.accessToken = 'pk.eyJ1IjoibGVtZW55YWxleCIsImEiOiJja3BybHZzY20wdXZtMnFzNGFpbWZtcW85In0.PqaZzstpzjoZHVHDVsRctw';
-				var map = new mapboxgl.Map({
-					container: 'map',
-					style: 'mapbox://styles/mapbox/streets-v11',
-					center: [4.830210474620333, 45.769538467990444], // starting position [lng, lat]
-					zoom: 16 // starting zoom
-				});
-				var marker = new mapboxgl.Marker({
-					color: "#C92114"
-				})
-				.setLngLat([4.830210474620333, 45.769538467990444])
-				.addTo(map);
-				</script>
+
 				<br>
 				<p>
 					Ouvert de 9h à 18h, du lundi au vendredi
@@ -197,5 +185,20 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha512-oBTprMeNEKCnqfuqKd6sbvFzmFQtlXS3e0C/RGFV0hD6QzhHV+ODfaQbAlmY6/q0ubbwlAM/nCJjkrgA3waLzg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="./js/blocs.js"></script>
 	<script src="./js/jquery.touchSwipe.js" defer></script>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js' crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		mapboxgl.accessToken = 'pk.eyJ1IjoibGVtZW55YWxleCIsImEiOiJja3BybHZzY20wdXZtMnFzNGFpbWZtcW85In0.PqaZzstpzjoZHVHDVsRctw';
+		var map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/mapbox/streets-v11',
+			center: [4.830210474620333, 45.769538467990444], // starting position [lng, lat]
+			zoom: 16 // starting zoom
+		});
+		var marker = new mapboxgl.Marker({
+			color: "#C92114"
+		})
+		.setLngLat([4.830210474620333, 45.769538467990444])
+		.addTo(map);
+	</script>
 </body>
 </html>
