@@ -18,7 +18,7 @@ a:hover {
 }
 
 .footerSocial {
-    padding-top: 2rem;
+    margin-top: 2rem;
     font-size: 2rem;
 }
 
@@ -35,7 +35,7 @@ a:hover {
 }
 
 .footerLink{
-    padding-top: 2rem;
+    margin-top: 2rem;
 }
 .bloc {
     width: 100%;
