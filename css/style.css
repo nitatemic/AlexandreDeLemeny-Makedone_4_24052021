@@ -17,6 +17,11 @@ a:hover {
     cursor: pointer;
 }
 
+.footerSocial {
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -27,6 +32,10 @@ a:hover {
 }
 .form-black{
     color: black;
+}
+
+.footerLink{
+    padding-top: 2rem;
 }
 .bloc {
     width: 100%;
